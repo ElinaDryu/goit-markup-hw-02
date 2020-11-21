@@ -6,13 +6,12 @@
   --accent-color-blue: #2196f3;
   --accent-color-black: #000000;
   --accent-color-white: #ffffff;
-  --accent-color-white-transparence: 255, 255, 255, 0, 6;
+  --accent-color-white-transparence: rgb(255, 255, 255, 0.6);
+  --footer-bcg: #2f303a;
 }
 
 body {
   font-family: var(--main-font);
-  text-decoration: none;
-  list-style-type: none;
 }
 
 /* ========== COMPONENTS ========== */
@@ -29,25 +28,96 @@ body {
   overflow: hidden;
 }
 
-.logo-wrap {
-  color: var(--accent-color-blue);
-}
 /* ========== END COMPONENTS ========== */
 
 /* ========== HEADER ========== */
 
 .logo {
   font-family: var(--secondary-font);
-  font-weight: bold;
+  font-weight: 700;
   color: var(--accent-color-black);
+  text-decoration: none;
+  list-style-type: none;
+  font-size: 26px;
+  line-height: 1.192;
+  letter-spacing: 0.03em;
 }
+.logo-wrap {
+  color: var(--accent-color-blue);
+}
+.logo:hover,
+.logo:focus {
+  color: var(--accent-color-blue);
+}
+
+.site-nav-items {
+  list-style-type: none;
+}
+.site-nav-link {
+  text-decoration: none;
+  color: var(--main-color-black);
+  font-size: 14px;
+  line-height: 1.142;
+  letter-spacing: 0.02em;
+  font-weight: 500;
+}
+/* .site-nav-link:hover,
+.site-nav-link:focus {
+  color: var(--accent-color-blue);
+} */
+
+.contacts {
+  list-style-type: none;
+  font-style: normal;
+}
+.site-nav-contacts {
+  color: var(--main-color-grey);
+  font-size: 14px;
+  line-height: 1.142;
+  letter-spacing: 0.02em;
+  font-weight: 500;
+}
+/* .site-nav-contacts:hover,
+.site-nav-contacts:focus {
+  color: var(--accent-color-blue);
+} */
 
 /* ========== END HEADER ========== */
 
-/* ========== FONTS ========== */
-font-family: "Raleway", sans-serif;
-font-family: "Roboto", sans-serif;
-/* ========== END FONTS ========== */
+/* ========== FOOTER ========== */
 
-/* list-style-type: none; - без точек */
-/* text-dicoration: none; - без стилей (подчеркивание. курсив) */
+footer {
+  background-color: var(--footer-bcg);
+}
+.footer-items {
+  list-style-type: none;
+  font-style: normal;
+}
+.footer-contacts {
+  font-family: var(--main-font);
+  color: var(--accent-color-white-transparence);
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+}
+.logo-footer {
+  color: var(--accent-color-white);
+}
+.map {
+  color: var(--accent-color-white);
+}
+.footer-contacts:hover,
+.footer-contacts:focus {
+  color: var(--accent-color-blue);
+}
+/* ========== END FOOTER ========== */
+
+/* ========== HERO ========== */
+.hero {
+  font-family: var(--main-font);
+  font-weight: 900;
+}
+
+/* ========== END HERO ========== */
