@@ -1,3 +1,22 @@
+:root {
+  --main-font: "Roboto", sans-serif;
+  --secondary-font: "Raleway", sans-serif;
+  --main-color-black: #212121;
+  --main-color-grey: #757575;
+  --accent-color-blue: #2196f3;
+  --accent-color-black: #000000;
+  --accent-color-white: #ffffff;
+  --accent-color-white-transparence: 255, 255, 255, 0, 6;
+}
+
+body {
+  font-family: var(--main-font);
+  text-decoration: none;
+  list-style-type: none;
+}
+
+/* ========== COMPONENTS ========== */
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -10,5 +29,25 @@
   overflow: hidden;
 }
 
-list-style: none;
-text-dicoration: none;
+.logo-wrap {
+  color: var(--accent-color-blue);
+}
+/* ========== END COMPONENTS ========== */
+
+/* ========== HEADER ========== */
+
+.logo {
+  font-family: var(--secondary-font);
+  font-weight: bold;
+  color: var(--accent-color-black);
+}
+
+/* ========== END HEADER ========== */
+
+/* ========== FONTS ========== */
+font-family: "Raleway", sans-serif;
+font-family: "Roboto", sans-serif;
+/* ========== END FONTS ========== */
+
+/* list-style-type: none; - без точек */
+/* text-dicoration: none; - без стилей (подчеркивание. курсив) */
